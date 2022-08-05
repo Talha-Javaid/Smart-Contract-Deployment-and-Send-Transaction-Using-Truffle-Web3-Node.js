@@ -1,10 +1,12 @@
 # Smart-Contract-Deployment-and-Send-Transaction-Using-Truffle-Web3-Node.js
 
 This repo is about the deployment of solidity smart contract on ethereum blockchain on rinkeby testnet using truffle and interacting with contract using node.js script for web3.js. The purpose is to 
+```
 1- Build and deploy your contract using truffle.
 2- Writing a node-js script to send the transaction using web3.
 3- Writing a node-js script to get the transaction using web3.
 
+```
 ### Setting Up the Environment
 
 ```
