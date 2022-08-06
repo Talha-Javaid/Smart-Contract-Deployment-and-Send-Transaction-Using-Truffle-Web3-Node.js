@@ -39,7 +39,7 @@ const getTransaction = async () => {
   const networkId = await web3.eth.net.getId();
   const myContract = new web3.eth.Contract(DemoContract.abi, DemoContract.networks[networkId].address);
 
-  console.log(await myContract.methods.getData().call());
+  await myContract.methods.getData().call();
   console.log(`Data is: ${await myContract.methods.getData().call()}`);
 
 }
