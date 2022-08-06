@@ -41,7 +41,7 @@ const SendTransaction = async () => {
     DemoContract.networks[networkId].address
   );
 
-  console.log(await myContract.methods.getData().call());
+  await myContract.methods.getData().call();
   console.log(`Old value is: ${await myContract.methods.getData().call()}`);
   const receipt = await myContract.methods.setData(12233).send({ from: address });
   console.log(`Transaction hash: ${receipt.transactionHash}`);
